@@ -42,7 +42,7 @@ flowchart TD
 ## System Architecture
 
 ```mermaid
-architecture-beta
+flowchart LR    
     group frontend(Cloud)[Frontend UI]
     service react(Internet)[React / Vite] in frontend
     
