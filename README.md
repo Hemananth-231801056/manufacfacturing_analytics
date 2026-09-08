@@ -42,20 +42,25 @@ flowchart TD
 ## System Architecture
 
 ```mermaid
-flowchart LR    
-    group frontend(Cloud)[Frontend UI]
-    service react(Internet)[React / Vite] in frontend
-    
-    group backend(Server)[FastAPI Backend]
-    service api(Server)[Uvicorn] in backend
-    service db(Database)[SQLite Database] in backend
-    service models(Disk)[XGBoost Models] in backend
-    service ollama(Disk)[Ollama / Llama3] in backend
-    
-    react:R --> L:api
-    api:R --> L:db
-    api:T --> B:models
-    api:B --> T:ollama
+flowchart LR
+    U[User] --> F[React Frontend]
+    F --> API[FastAPI Backend]
+
+    API --> A1[FileReader Agent]
+    A1 --> A2[Extraction Agent]
+    A2 --> A3[Validation Agent]
+    A3 --> A4[Cleaning Agent]
+    A4 --> A5[Feature Engineering Agent]
+    A5 --> A6[Prediction Agent]
+    A6 --> A7[Decision Agent]
+    A7 --> A8[Recommendation Agent]
+    A8 --> A9[Report Agent]
+
+    A6 --> M[XGBoost Model]
+    A6 --> S[SHAP]
+    A8 --> O[Ollama / Llama 3]
+    A9 --> DB[SQLite Database]
+    A9 --> PDF[QC PDF Report]
 ```
 
 ## AI / ML Components
