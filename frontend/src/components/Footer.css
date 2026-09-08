@@ -1,0 +1,33 @@
+.footer {
+  margin-top: auto;
+  border-top: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-tagline {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.footer-disclaimer {
+  font-size: 0.85rem;
+  color: var(--accent-amber);
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: rgba(255, 209, 102, 0.1);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 209, 102, 0.2);
+}
+
+.footer-copyright {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}

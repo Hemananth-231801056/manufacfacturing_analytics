@@ -1,0 +1,156 @@
+{
+  "random_forest": {
+    "model_name": "Random Forest",
+    "accuracy": 0.7910447761194029,
+    "precision_macro": 0.8634738851292729,
+    "precision_weighted": 0.8023427889184995,
+    "recall_macro": 0.6789396170839469,
+    "recall_weighted": 0.7910447761194029,
+    "f1_macro": 0.7304029304029305,
+    "f1_weighted": 0.788792302225138,
+    "roc_auc_weighted": 0.8612922698166582,
+    "confusion_matrix": [
+      [
+        72,
+        0,
+        25
+      ],
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        13,
+        0,
+        84
+      ]
+    ],
+    "class_names": [
+      "Approved",
+      "Rejected",
+      "Rework"
+    ],
+    "cv_f1_weighted": 0.8597226199368793
+  },
+  "xgboost": {
+    "model_name": "XGBoost",
+    "accuracy": 0.7910447761194029,
+    "precision_macro": 0.8612514173796516,
+    "precision_weighted": 0.7991251863556151,
+    "recall_macro": 0.6789396170839469,
+    "recall_weighted": 0.7910447761194029,
+    "f1_macro": 0.7306051431951839,
+    "f1_weighted": 0.789085058058699,
+    "roc_auc_weighted": 0.863493298771803,
+    "confusion_matrix": [
+      [
+        74,
+        0,
+        23
+      ],
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        15,
+        0,
+        82
+      ]
+    ],
+    "class_names": [
+      "Approved",
+      "Rejected",
+      "Rework"
+    ],
+    "cv_f1_weighted": 0.8552399400966746
+  },
+  "best_model": "XGBoost",
+  "best_f1_weighted": 0.789085058058699,
+  "training_samples": 1167,
+  "test_samples": 201,
+  "n_features": 74,
+  "feature_names": [
+    "code",
+    "api_water",
+    "api_total_impurities",
+    "api_l_impurity",
+    "api_content",
+    "api_ps01",
+    "api_ps05",
+    "api_ps09",
+    "lactose_water",
+    "lactose_sieve0045",
+    "lactose_sieve015",
+    "lactose_sieve025",
+    "smcc_water",
+    "smcc_td",
+    "smcc_bd",
+    "smcc_ps01",
+    "smcc_ps05",
+    "smcc_ps09",
+    "starch_ph",
+    "starch_water",
+    "tbl_min_thickness",
+    "tbl_max_thickness",
+    "fct_min_thickness",
+    "fct_max_thickness",
+    "tbl_min_weight",
+    "tbl_max_weight",
+    "tbl_rsd_weight",
+    "fct_rsd_weight",
+    "tbl_min_hardness",
+    "tbl_max_hardness",
+    "tbl_av_hardness",
+    "fct_min_hardness",
+    "fct_max_hardness",
+    "fct_av_hardness",
+    "tbl_max_diameter",
+    "fct_max_diameter",
+    "tbl_tensile",
+    "fct_tensile",
+    "tbl_yield",
+    "batch_yield",
+    "tbl_speed_mean",
+    "tbl_speed_change",
+    "tbl_speed_0_duration",
+    "total_waste",
+    "startup_waste",
+    "weekend",
+    "fom_mean",
+    "fom_change",
+    "SREL_startup_mean",
+    "SREL_production_mean",
+    "SREL_production_max",
+    "main_CompForce_mean",
+    "main_CompForce_sd",
+    "main_CompForce_median",
+    "pre_CompForce_mean",
+    "tbl_fill_mean",
+    "tbl_fill_sd",
+    "cyl_height_mean",
+    "stiffness_mean",
+    "stiffness_max",
+    "stiffness_min",
+    "ejection_mean",
+    "ejection_max",
+    "ejection_min",
+    "Startup_tbl_fill_maxDifference",
+    "Startup_main_CompForce_mean",
+    "Startup_tbl_fill_mean",
+    "api_particle_span",
+    "smcc_compressibility",
+    "hardness_range",
+    "thickness_uniformity",
+    "compression_variability",
+    "coating_impact",
+    "waste_ratio"
+  ],
+  "class_distribution": {
+    "Approved": 484,
+    "Rejected": 35,
+    "Rework": 486
+  }
+}
